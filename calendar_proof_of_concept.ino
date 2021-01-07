@@ -9,10 +9,22 @@ int dailyPinGreen = 10;
 int dailyPinBlue = 9;
 int button = 2;
 
-void setup(){
-    
+void setup()
+{
+    pinMode(button, INPUT_PULLUP);
+    pinMode(day2Pin, OUTPUT);
+    pinMode(day1Pin, OUTPUT);
+    pinMode(dailyPinBlue, OUTPUT);
+    pinMode(dailyPinGreen, OUTPUT);
+    pinMode(dailyPinRed, OUTPUT);
+
+    digitalWrite(dailyPinRed, HIGH);
+    digitalWrite(dailyPinBlue, LOW);
+    digitalWrite(dailyPinGreen, LOW);
+
 }
 
-void loop(){
-
+void loop()
+{
+    
 }
