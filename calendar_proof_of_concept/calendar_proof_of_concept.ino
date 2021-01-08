@@ -37,10 +37,11 @@ void loop()
         if(dayCount == 0){
             digitalWrite(day1Pin, HIGH);
         }
-        else if(dayCount == 1){
+        if(dayCount == 1){
             digitalWrite(day2Pin, HIGH);            
         }
 
         dayCount++;
     }
+    delay(250);
 }
