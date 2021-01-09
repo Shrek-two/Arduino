@@ -31,6 +31,8 @@ void loop()
 {
     #define daily_delay 864000  // delay time for one day
 
+    
+
     if(digitalRead(button) == LOW){             // watch for button press
         digitalWrite(dailyPinGreen, HIGH);      // if button is pressed, set light to green
         digitalWrite(dailyPinRed, LOW);         // unset red
